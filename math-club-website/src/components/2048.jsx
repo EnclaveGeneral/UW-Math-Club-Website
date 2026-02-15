@@ -3,36 +3,36 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-// Tile colors based on value
+// Tile colors - UW Husky themed
 const TILE_COLORS = {
-  0: "#cdc1b4",
-  2: "#eee4da",
-  4: "#ede0c8",
-  8: "#f2b179",
-  16: "#f59563",
-  32: "#f67c5f",
-  64: "#f65e3b",
-  128: "#edcf72",
-  256: "#edcc61",
-  512: "#edc850",
-  1024: "#edc53f",
-  2048: "#edc22e",
+  0: "#e8e3d3",       // Light gold (empty)
+  2: "#c5b4e3",       // Accent Lavender
+  4: "#b7a57a",       // Husky Gold
+  8: "#4b2e83",       // Spirit Purple
+  16: "#32006e",      // Husky Purple
+  32: "#e93cac",      // Accent Pink
+  64: "#85754d",      // Heritage Gold
+  128: "#ffc700",     // Spirit Gold
+  256: "#2ad2c9",     // Accent Teal
+  512: "#aadb1e",     // Accent Green
+  1024: "#32006e",    // Husky Purple (deep)
+  2048: "#ffc700",    // Spirit Gold (victory!)
 };
 
-// Text color: dark for small tiles, white for larger
+// Text color: dark for light tiles, white for dark tiles
 const TEXT_COLORS = {
   0: "transparent",
-  2: "#776e65",
-  4: "#776e65",
-  8: "#ffffff",
-  16: "#ffffff",
-  32: "#ffffff",
-  64: "#ffffff",
-  128: "#ffffff",
-  256: "#ffffff",
-  512: "#ffffff",
-  1024: "#ffffff",
-  2048: "#ffffff",
+  2: "#32006e",       // Purple text on lavender
+  4: "#ffffff",       // White text on gold
+  8: "#ffc700",       // Gold text on purple
+  16: "#ffc700",      // Gold text on deep purple
+  32: "#ffffff",      // White on pink
+  64: "#ffffff",      // White on heritage gold
+  128: "#32006e",     // Purple text on spirit gold
+  256: "#32006e",     // Purple text on teal
+  512: "#32006e",     // Purple text on green
+  1024: "#ffc700",    // Gold on purple
+  2048: "#32006e",    // Purple on gold
 };
 
 // Creates a blank 4x4 board
@@ -269,7 +269,7 @@ export default function Game2048() {
       {/* Title */}
       <Typography
         variant="h3"
-        sx={{ fontWeight: "bold", color: "#776e65", mb: 1 }}
+        sx={{ fontWeight: "bold", color: "#4b2e83", mb: 1 }}
       >
         Husky 2048
       </Typography>
@@ -286,14 +286,14 @@ export default function Game2048() {
       >
         <Box
           sx={{
-            bgcolor: "#bbada0",
+            bgcolor: "#4b2e83",
             borderRadius: 1,
             padding: "8px 16px",
             textAlign: "center",
             minWidth: 80,
           }}
         >
-          <Typography sx={{ color: "#eee4da", fontSize: 12, fontWeight: "bold" }}>
+          <Typography sx={{ color: "#b7a57a", fontSize: 12, fontWeight: "bold" }}>
             SCORE
           </Typography>
           <Typography sx={{ color: "#ffffff", fontWeight: "bold", fontSize: 18 }}>
@@ -303,14 +303,14 @@ export default function Game2048() {
 
         <Box
           sx={{
-            bgcolor: "#bbada0",
+            bgcolor: "#4b2e83",
             borderRadius: 1,
             padding: "8px 16px",
             textAlign: "center",
             minWidth: 80,
           }}
         >
-          <Typography sx={{ color: "#eee4da", fontSize: 12, fontWeight: "bold" }}>
+          <Typography sx={{ color: "#b7a57a", fontSize: 12, fontWeight: "bold" }}>
             BEST
           </Typography>
           <Typography sx={{ color: "#ffffff", fontWeight: "bold", fontSize: 18 }}>
@@ -325,7 +325,7 @@ export default function Game2048() {
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",
           gap: "8px",
-          bgcolor: "#bbada0",
+          bgcolor: "#32006e",
           borderRadius: 2,
           padding: "8px",
           width: "100%",
@@ -369,7 +369,7 @@ export default function Game2048() {
         <Typography
           sx={{
             mt: 2,
-            color: "#776e65",
+            color: "#32006e",
             fontWeight: "bold",
             fontSize: 20,
           }}
@@ -384,10 +384,10 @@ export default function Game2048() {
         onClick={handleNewGame}
         sx={{
           mt: 2,
-          bgcolor: "#8f7a66",
-          color: "#ffffff",
+          bgcolor: "#4b2e83",
+          color: "#ffc700",
           fontWeight: "bold",
-          "&:hover": { bgcolor: "#9f8b77" },
+          "&:hover": { bgcolor: "#32006e" },
         }}
       >
         New Game
