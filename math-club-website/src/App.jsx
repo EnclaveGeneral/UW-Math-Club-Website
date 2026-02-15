@@ -5,11 +5,14 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import ButtonAppBar from './components/navbar';
+import SectionOne from './components/SectionOne';
 
-export default function ButtonAppBar() {
+export default function main() {
   return (
     <div>
-      <MenuIcon />
+      <ButtonAppBar />
+      <SectionOne />
     </div>
   );
 }
