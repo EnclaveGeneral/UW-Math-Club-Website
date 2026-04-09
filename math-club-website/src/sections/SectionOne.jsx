@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import { useState } from "react";
-import Game2048 from "./2048";
+import Game2048 from "../components/2048";
 
 export default function SectionOne() {
 
