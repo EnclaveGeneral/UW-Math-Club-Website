@@ -25,13 +25,21 @@ export default function SectionOne() {
                         component="img"
                         src="../../../assets/club_logo.png"
                         alt="Math Club Interactive Component"
+                        width={"75%"}
                         onClick={handleLogoClick}
                         sx={{
-                            transformOrigin: "center",
-                            transition: "transform 0.7s ease-in-out",
-                            transform: spin ? "rotate(360deg)" : "rotate(0deg)",
-                        }}
-                    >
+                            transition: "all 0.3s ease",
+                            "&:hover": {
+                                transform: "scale(1.05)",
+                                filter: "drop-shadow(0 0 10px #6a00ff)",
+                                animation: "pulse 1s infinite",
+                            },
+                            "@keyframes pulse": {
+                                "0%": { filter: "drop-shadow(0 0 5px #6a00ff)" },
+                                "50%": { filter: "drop-shadow(0 0 20px #a855f7)" },
+                                "100%": { filter: "drop-shadow(0 0 5px #6a00ff)" },
+                            },
+                        }}                                      >
                     </Box>
                 </Grid>
                 <Grid size={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
