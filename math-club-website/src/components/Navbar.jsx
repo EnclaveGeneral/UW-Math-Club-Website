@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
           </Typography>
 
           <Button variant="contained" href="/" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Home</Button>
-          <Button variant="contained" href="/officers" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Officer</Button>
+          <Button variant="contained" href="/officers" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Leadership</Button>
           <Button variant="contained" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Calendar</Button>
           <Button variant="contained" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Join</Button>
         </Toolbar>
