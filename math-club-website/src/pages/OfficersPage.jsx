@@ -10,47 +10,44 @@ const current_officers = [
      position: "Lead Software Developer", 
      major: "HCDE", 
      bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
-     photo: "../../assets/richard_zhang_pic.jpg" }
-    ,
-    {name: "Richard Zhang", 
-     position: "Lead Software Developer", 
-     major: "HCDE", 
-     bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
-     photo: "../../assets/richard_zhang_pic.jpg"
+     photo: "../../assets/richard_zhang_pic.jpg" 
     }
     ,
-    {name: "Richard Zhang", 
-     position: "Lead Software Developer", 
-     major: "HCDE", 
-     bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
-     photo: "../../assets/richard_zhang_pic.jpg"
+    {name: "Santoshshiva Thirumuruga",
+     position: "President",
+     major: "Computer Science",
+     bio: "Hello. I have been a part of the Husky Math Club since I was a freshman and it has been a huge component of my academic experience. My favorite event would have to be Estimathon that we did Winter 2026.",
+     photo: "../../assets/santosh_pic.png"
     }
     ,
+    {name: "Yash Solanki",
+     position: "General Officer",
+     major: "Computer Science",
+     bio: "I really like coding and watching F1",
+     photo: "../../assets/yash_pic.png"
+    }
+    ,
+    {name: "David Jovnozon",
+     position: "General Officer",
+     major: "Math and Applied Mathematics",
+     bio: "I enjoy algebra, fun projects, and rock climbing. Feel free to reach out at davjavno[at]uw[dot]edu",
+     photo: "../../assets/david_pic.jpg"
+
+    }
+    ,
+    {name: "Wren Zheng",
+     position: "General Officer",
+     major: "Math and Philosophy",
+     bio: ":3c",
+     photo: "../../assets/wren_pic.jpeg"
+    }
 ]
 
 
 // If an officer has graduated / no longer active, please simply move them to the list of past-officers so that they will still be displayed 
 // if deemed important, and delete their entry in the current_officers list 
 const past_officers = [
-    {name: "Richard Zhang", 
-     position: "Lead Software Developer", 
-     major: "HCDE", 
-     bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
-     photo: "../../assets/richard_zhang_pic.jpg" 
-    }
-    ,
-    {
 
-    }
-    ,
-    {
-
-    }
-    ,
-    {
-
-    }
-    ,
 ]
 
 export default function HomePage() {
@@ -73,7 +70,7 @@ export default function HomePage() {
 
             <Grid container spacing={2} justifyContent={"center"} alignItems={"center"} sx={{mt: {xs: 2, sm: 4, md: 6}}}>
                 {current_officers.map((officer, index) => (
-                    <Grid size={4} key={index} textAlign={"center"}>
+                    <Grid size={4} key={index} textAlign={"center"} sx={{mt: {xs: 1, sm: 2, md: 3}}}>
                         <Box component={"img"} src={officer.photo} sx={{ width:"50%", height:"25%", objectFit: "cover", borderRadius: 2}}/>
 
                         <Typography variant="h6" sx={{ color: "#ffffff", mt: 1 }}>
