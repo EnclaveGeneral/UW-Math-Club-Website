@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-export default function main() {
+export default function App() {
   return (
     <BrowserRouter>
       <NavBar />
