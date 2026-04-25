@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import club_logo from "../../assets/club_logo.png";
+import { Link } from "react-router-dom";
 
 export default function ButtonAppBar() {
   return (
@@ -22,10 +23,10 @@ export default function ButtonAppBar() {
             Husky Math Club 
           </Typography>
 
-          <Button variant="contained" href="/" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Home</Button>
-          <Button variant="contained" href="/officers" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Leadership</Button>
-          <Button variant="contained" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Calendar</Button>
-          <Button variant="contained" href="/join" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Join</Button>
+          <Button variant="contained" component={Link} to="/" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Home</Button>
+          <Button variant="contained" component={Link} to="/officers" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Leadership</Button>
+          <Button variant="contained" component={Link} to="/calendar" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Calendar</Button>
+          <Button variant="contained" component={Link} to="/join" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Join</Button>
         </Toolbar>
       </AppBar>
     </Box>

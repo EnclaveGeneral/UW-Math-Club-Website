@@ -1,6 +1,11 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import richard_photo from "../../assets/richard_zhang_pic.jpg";
+import santosh_photo from "../../assets/santosh_pic.png";
+import yash_photo from "../../assets/yash_pic.png";
+import david_photo from "../../assets/david_pic.jpg";
+import wren_photo from "../../assets/wren_pic.jpeg";
 
 // To adjust the list of current, active officers, please simply manage this array following the pre-defined format as demonstrated, the 
 // website will reflect all changes, ensure that all picture or media assets are inside the /assets folder in the upper level directory 
@@ -10,28 +15,28 @@ const current_officers = [
      position: "Lead Software Developer", 
      major: "HCDE", 
      bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
-     photo: "../../assets/richard_zhang_pic.jpg" 
+     photo: richard_photo
     }
     ,
     {name: "Santoshshiva Thirumuruga",
      position: "President",
      major: "Computer Science",
      bio: "Hello. I have been a part of the Husky Math Club since I was a freshman and it has been a huge component of my academic experience. My favorite event would have to be Estimathon that we did Winter 2026.",
-     photo: "../../assets/santosh_pic.png"
+     photo: santosh_photo
     }
     ,
     {name: "Yash Solanki",
      position: "General Officer",
      major: "Computer Science",
      bio: "I really like coding and watching F1",
-     photo: "../../assets/yash_pic.png"
+     photo: yash_photo
     }
     ,
     {name: "David Jovnozon",
      position: "General Officer",
      major: "Math and Applied Mathematics",
      bio: "I enjoy algebra, fun projects, and rock climbing. Feel free to reach out at davjavno[at]uw[dot]edu",
-     photo: "../../assets/david_pic.jpg"
+     photo: david_photo
 
     }
     ,
@@ -39,7 +44,7 @@ const current_officers = [
      position: "General Officer",
      major: "Math and Philosophy",
      bio: ":3c",
-     photo: "../../assets/wren_pic.jpeg"
+     photo: wren_photo
     }
 ]
 

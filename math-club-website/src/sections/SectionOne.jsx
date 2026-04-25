@@ -2,6 +2,7 @@ import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import { useState } from "react";
 import Game2048 from "../components/2048";
+import club_logo from "../../assets/club_logo.png";
 
 export default function SectionOne() {
 
@@ -23,7 +24,7 @@ export default function SectionOne() {
                 <Grid size={6} display="flex" justifyContent="center" alignItems="center">
                     <Box
                         component="img"
-                        src="../../../assets/club_logo.png"
+                        src={club_logo}
                         alt="Math Club Interactive Component"
                         width={"75%"}
                         onClick={handleLogoClick}

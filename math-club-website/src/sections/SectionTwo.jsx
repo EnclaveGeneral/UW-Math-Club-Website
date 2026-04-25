@@ -1,5 +1,8 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
+import event_1_pic from "../../assets/example_event_1.jpg";
+import event_2_pic from "../../assets/example_event_1.jpg";
+import event_3_pic from "../../assets/example_event_1.jpg";
 
 export default function SectionTwo() {
     return (
@@ -19,17 +22,17 @@ export default function SectionTwo() {
 
             <Grid container spacing={2} justifyContent="center" alignItems={"center"} sx={{mt: {xs: 6, sm: 8, md: 10}}}>
                 <Grid size={4} textAlign={"center"}>
-                    <img src="../../assets/example_event_1.jpg" style={{ width: "75%" }} />
+                    <img src={event_1_pic} style={{ width: "75%" }} />
                     <Typography variant="h6" sx={{ color: "#ffffff", fontStyle: "italic", mt: {xs: 0.5, sm: 1.0, md: 1.5}}}>Husky Math Talk Event</Typography>
                 </Grid>
 
                  <Grid size={4} textAlign={"center"}>
-                    <img src="../../assets/example_event_2.jpg" style={{ width: "75%" }} />
+                    <img src={event_2_pic} style={{ width: "75%" }} />
                     <Typography variant="h6" sx={{ color: "#ffffff", fontStyle: "italic", mt: {xs: 0.5, sm: 1.0, md: 1.5}}}>Husky Estimathon Event</Typography>
                 </Grid>
 
                  <Grid size={4} textAlign={"center"}>
-                    <img src="../../assets/example_event_3.jpg" style={{ width: "75%" }} />
+                    <img src={event_3_pic} style={{ width: "75%" }} />
                     <Typography variant="h6" sx={{ color: "#ffffff", fontStyle: "italic", mt: {xs: 0.5, sm: 1.0, md: 1.5}}}>Annual Integration Bee</Typography>
                 </Grid>
 

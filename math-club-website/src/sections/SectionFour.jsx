@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import { BorderBottom, BorderLeft, BorderRight, Image } from "@mui/icons-material";
 import { Grid, Typography} from "@mui/material";
+import jane_street_logo from "../../assets/jane_street_logo.png";
 
 export default function SectionFour() {
     return (
@@ -12,7 +13,7 @@ export default function SectionFour() {
 
             <Grid container spacing={2} justifyContent="center" alignItems={"center"} sx={{mt: {xs: 6, sm: 8, md: 10}}}>
                 <Grid textAlign="center" justifyContent="center"> 
-                    <img src="../../assets/jane_street_logo.png" style={{ width: "20%" }}/>
+                    <img src={jane_street_logo} style={{ width: "20%" }}/>
                 </Grid>
             </Grid>
         </Box>
