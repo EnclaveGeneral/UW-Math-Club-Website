@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import insta_icon from "../../assets/instagram_icon.png";
-import discord_icon from "../../assets/discord_icon.png";
+import insta_icon from "../assets/instagram_icon.png";
+import discord_icon from "../assets/discord_icon.png";
 
 export default function SectionThree() {
     return (

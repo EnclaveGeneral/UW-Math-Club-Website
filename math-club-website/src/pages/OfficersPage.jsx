@@ -1,11 +1,11 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import richard_photo from "../../assets/richard_zhang_pic.jpg";
-import santosh_photo from "../../assets/santosh_pic.png";
-import yash_photo from "../../assets/yash_pic.png";
-import david_photo from "../../assets/david_pic.jpg";
-import wren_photo from "../../assets/wren_pic.jpeg";
+import richard_photo from "../assets/richard_zhang_pic.jpg";
+import santosh_photo from "../assets/santosh_pic.png";
+import yash_photo from "../assets/yash_pic.png";
+import david_photo from "../assets/david_pic.jpg";
+import wren_photo from "../assets/wren_pic.jpeg";
 
 // To adjust the list of current, active officers, please simply manage this array following the pre-defined format as demonstrated, the 
 // website will reflect all changes, ensure that all picture or media assets are inside the /assets folder in the upper level directory 

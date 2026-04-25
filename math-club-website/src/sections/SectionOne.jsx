@@ -2,7 +2,7 @@ import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
 import { useState } from "react";
 import Game2048 from "../components/2048";
-import club_logo from "../../assets/club_logo.png";
+import club_logo from "../assets/club_logo.png";
 
 export default function SectionOne() {
 

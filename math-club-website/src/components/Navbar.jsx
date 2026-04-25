@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import club_logo from "../../assets/club_logo.png";
+import club_logo from "../assets/club_logo.png";
 import { Link } from "react-router-dom";
 
 export default function ButtonAppBar() {

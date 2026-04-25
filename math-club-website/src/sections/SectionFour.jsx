@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import { BorderBottom, BorderLeft, BorderRight, Image } from "@mui/icons-material";
 import { Grid, Typography} from "@mui/material";
-import jane_street_logo from "../../assets/jane_street_logo.png";
+import jane_street_logo from "../assets/jane_street_logo.png";
 
 export default function SectionFour() {
     return (

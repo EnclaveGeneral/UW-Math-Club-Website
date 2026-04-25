@@ -1,8 +1,8 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
-import event_1_pic from "../../assets/example_event_1.jpg";
-import event_2_pic from "../../assets/example_event_1.jpg";
-import event_3_pic from "../../assets/example_event_1.jpg";
+import event_1_pic from "../assets/example_event_1.jpg";
+import event_2_pic from "../assets/example_event_1.jpg";
+import event_3_pic from "../assets/example_event_1.jpg";
 
 export default function SectionTwo() {
     return (
