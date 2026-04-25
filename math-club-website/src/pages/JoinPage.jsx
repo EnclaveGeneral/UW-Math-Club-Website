@@ -3,6 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import insta_icon from "../../assets/instagram_icon.png";
 import discord_icon from "../../assets/discord_icon.png";
+import join_us from "../../assets/husky_math_club_invite.svg";
 
 export default function JoinPage() {
     return (
@@ -27,7 +28,7 @@ export default function JoinPage() {
 
             </Box>
 
-            <img src="../../assets/husky_math_club_invite.svg" style={{ width: "75%" }} />
+            <img src={join_us} style={{ width: "75%" }} />
         </Box>
     )
 }
