@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import insta_icon from "../../assets/instagram_icon.png";
+import discord_icon from "../../assets/discord_icon.png";
 
 export default function JoinPage() {
     return (
@@ -10,14 +12,14 @@ export default function JoinPage() {
             <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 3, mt: {xs: 1, sm: 2, md: 3}}}>
     
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-                    <img src="../../assets/instagram_icon.png" style={{ width: "10%" }}></img>
+                    <img src={insta_icon} style={{ width: "10%" }}></img>
                     <Typography component="a" href="https://www.instagram.com/huskymathclub/" target="_blank" variant="h4" sx={{ color: '#ffffff' }}>
                         Follow Us On Instagram!
                     </Typography>
                 </Box>
 
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2 }}>
-                    <img src="../../assets/discord_icon.png" style={{ width: "10%" }}></img>
+                    <img src={discord_icon} style={{ width: "10%" }}></img>
                     <Typography component="a" href="https://discord.gg/9XTNNZKreC" target="_blank" variant="h4" sx={{ color: '#ffffff' }}>
                         Join Our Discord Server!
                     </Typography>

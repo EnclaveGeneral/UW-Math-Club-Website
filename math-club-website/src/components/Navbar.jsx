@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import club_logo from "../../assets/club_logo.png";
 
 export default function ButtonAppBar() {
   return (
@@ -13,7 +14,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           <Box
             component="img"
-            src="../../../assets/club_logo.png"
+            src={club_logo}
             alt="Math Club Logo"
             sx={{ height: 80, marginRight: 2 }}
           />
