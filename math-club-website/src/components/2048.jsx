@@ -262,7 +262,7 @@ export default function Game2048() {
         flexDirection: "column",
         alignItems: "center",
         padding: 2,
-        maxWidth: 400,
+        width: "clamp(280px, 90vw, 500px)",
         margin: "0 auto",
       }}
     >
@@ -271,7 +271,7 @@ export default function Game2048() {
         variant="h3"
         sx={{ fontWeight: "bold", color: "#4b2e83", mb: 1 }}
       >
-        Husky 2048
+        Try 2048
       </Typography>
 
       {/* Score display */}

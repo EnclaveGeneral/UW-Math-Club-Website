@@ -17,16 +17,16 @@ export default function ButtonAppBar() {
             component="img"
             src={club_logo}
             alt="Math Club Logo"
-            sx={{ height: 80, marginRight: 2 }}
+            sx={{ width: "clamp(50px, 15%, 800px)", height: 'auto', marginRight: 2 }}
           />
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: "#4b2e83" }}>
+          <Typography variant="h4" component="div" sx={{ fontSize: "clamp(1rem, 3vw, 2.50rem)", flexGrow: 1, color: "#4b2e83" }}>
             Husky Math Club 
           </Typography>
 
-          <Button variant="contained" component={Link} to="/" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Home</Button>
-          <Button variant="contained" component={Link} to="/officers" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Leadership</Button>
-          <Button variant="contained" component={Link} to="/calendar" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Calendar</Button>
-          <Button variant="contained" component={Link} to="/join" sx={{ color: "#ffffff", fontWeight: "Bold", fontSize: "100%", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Join</Button>
+          <Button variant="contained" component={Link} to="/" sx={{ minWidth: 0, color: "#ffffff", fontWeight: "Bold", fontSize: "clamp(0.25rem, 1.25vw, 1.5rem)", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Home</Button>
+          <Button variant="contained" component={Link} to="/officers" sx={{ minWidth: 0, color: "#ffffff", fontWeight: "Bold", fontSize: "clamp(0.25rem, 1.25vw, 1.5rem)", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Leadership</Button>
+          <Button variant="contained" component={Link} to="/calendar" sx={{ minWidth: 0, color: "#ffffff", fontWeight: "Bold", fontSize: "clamp(0.25rem, 1.25vw, 1.5rem)", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Calendar</Button>
+          <Button variant="contained" component={Link} to="/join" sx={{ minWidth: 0, color: "#ffffff", fontWeight: "Bold", fontSize: "clamp(0.25rem, 1.25vw, 1.5rem)", backgroundColor: '#4b2e83', marginLeft: {xs: 0.25, sm: 0.75, md: 1.25} }}>Join</Button>
         </Toolbar>
       </AppBar>
     </Box>

@@ -21,7 +21,7 @@ export default function SectionOne() {
     return (
         <Box  sx={{ backgroundColor: '#FAE1FA'}}> 
             <Grid container spacing={2} alignItems={"center"}>
-                <Grid size={6} display="flex" justifyContent="center" alignItems="center">
+                <Grid size={{ xs: 12, md: 6}} display="flex" justifyContent="center" alignItems="center">
                     <Box
                         component="img"
                         src={club_logo}
@@ -43,7 +43,7 @@ export default function SectionOne() {
                         }}                                      >
                     </Box>
                 </Grid>
-                <Grid size={6} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <Grid size={{ xs: 12, md: 6 }} sx={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
                     <Game2048 />
                 </Grid>
             </Grid>
