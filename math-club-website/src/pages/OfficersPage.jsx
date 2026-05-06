@@ -40,7 +40,7 @@ const current_officers = [
 
     }
     ,
-    {name: "Wren Zheng",
+    {name: "Wren Feng",
      position: "General Officer",
      major: "Math and Philosophy",
      bio: ":3c",
