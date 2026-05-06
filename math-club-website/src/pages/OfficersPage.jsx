@@ -6,6 +6,7 @@ import santosh_photo from "../assets/santosh_pic.png";
 import yash_photo from "../assets/yash_pic.png";
 import david_photo from "../assets/david_pic.jpg";
 import wren_photo from "../assets/wren_pic.jpeg";
+import kosuke_photo from "../assets/kosuke.jpg";
 
 // To adjust the list of current, active officers, please simply manage this array following the pre-defined format as demonstrated, the 
 // website will reflect all changes, ensure that all picture or media assets are inside the /assets folder in the upper level directory 
@@ -45,7 +46,13 @@ const current_officers = [
      major: "Math and Philosophy",
      bio: ":3c",
      photo: wren_photo
-    }
+    },
+    {name: "Kosuke Ejiri",
+     position: "General Officer",
+     major: "Applied Mathematics",
+     bio: "Hi! I’m interested in AI, scientific computing, and how math can be used to understand real-world systems. I’m excited to meet more people through Math Club and help make the community more welcoming",
+     photo: kosuke_photo
+    },
 ]
 
 
