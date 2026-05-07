@@ -7,6 +7,7 @@ import yash_photo from "../assets/yash_pic.png";
 import david_photo from "../assets/david_pic.jpg";
 import wren_photo from "../assets/wren_pic.jpeg";
 import kosuke_photo from "../assets/kosuke.jpg";
+import navjot_photo from "../assets/navjot.jpeg";
 
 // To adjust the list of current, active officers, please simply manage this array following the pre-defined format as demonstrated, the 
 // website will reflect all changes, ensure that all picture or media assets are inside the /assets folder in the upper level directory 
@@ -52,6 +53,12 @@ const current_officers = [
      major: "Applied Mathematics",
      bio: "Hi! I’m interested in AI, scientific computing, and how math can be used to understand real-world systems. I’m excited to meet more people through Math Club and help make the community more welcoming",
      photo: kosuke_photo
+    },
+    {name: "Navjot Singh Grewal",
+     position: "General Officer",
+     major: "Applied Mathematics",
+     bio: "I enjoy mathematics, especially analysis, number theory, and dynamical systems, along with reading literature and history. You can contact me at navjot2006grewal@gmail.com",
+     photo: navjot_photo
     },
 ]
 
