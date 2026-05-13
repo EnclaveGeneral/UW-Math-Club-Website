@@ -8,6 +8,8 @@ import david_photo from "../assets/david_pic.jpg";
 import wren_photo from "../assets/wren_pic.jpeg";
 import kosuke_photo from "../assets/kosuke.jpg";
 import navjot_photo from "../assets/navjot.jpeg";
+import chrisina_photo from "../assets/christina.jpg";
+import rohan_photo from "../assets/rohan.png";
 
 // To adjust the list of current, active officers, please simply manage this array following the pre-defined format as demonstrated, the 
 // website will reflect all changes, ensure that all picture or media assets are inside the /assets folder in the upper level directory 
@@ -60,13 +62,24 @@ const current_officers = [
      bio: "I enjoy mathematics, especially analysis, number theory, and dynamical systems, along with reading literature and history. You can contact me at navjot2006grewal@gmail.com",
      photo: navjot_photo
     },
+    {name: "Christina Kawai",
+     position: "Social Media / Outreach Chair",
+     major: "Informatics and Applied Mathematics",
+     bio: "Hello! I love to eat yummy food, go snowboarding, and sleep for 10 hours!",
+     photo: chrisina_photo
+    }
 ]
 
 
 // If an officer has graduated / no longer active, please simply move them to the list of past-officers so that they will still be displayed 
 // if deemed important, and delete their entry in the current_officers list 
 const past_officers = [
-
+    {name: "Rohan Pandey",
+     position: "Vice President",
+     major: "Applied Computational Mathematics Sciences",
+     bio: "AI enthusiast and loves to play Tennis and Monopoly",
+     photo: rohan_photo
+    }
 ]
 
 export default function HomePage() {
