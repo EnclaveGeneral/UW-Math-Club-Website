@@ -132,16 +132,16 @@ export default function HomePage() {
                     <Grid size={4} key={index} textAlign={"center"}>
                         <Box component={"img"} src={officer.photo} sx={{ width:"50%", height:"25%", objectFit: "cover", borderRadius: 2}}/>
 
-                        <Typography variant="h6" sx={{ color: "#ffffff", mt: 1 }}>
+                        <Typography variant="h6" sx={{ fontSize: "clamp(0.15rem, 2.25vw, 1.75rem)", color: "#ffffff", mt: 1 }}>
                             {officer.name}
                         </Typography>
-                        <Typography variant="h6" sx={{ color: "#ffffff"}}>
+                        <Typography variant="h6" sx={{ fontSize: "clamp(0.15rem, 2.25vw, 1.75rem)", color: "#ffffff"}}>
                             {"Major: " + officer.major}
                         </Typography>
-                        <Typography variant="h6" sx={{ color: "#bb943a" }}>  {/* gold accent */}
+                        <Typography variant="h6" sx={{ fontSize: "clamp(0.15rem, 2.25vw, 1.75rem)", color: "#b7a57a" }}>  {/* gold accent */}
                             {"Former Position: " + officer.position}
                         </Typography>
-                        <Typography variant="body2" sx={{ color: "#ffffff", mt: 0.5 }}>
+                        <Typography variant="body2" sx={{ fontSize: "clamp(0.10rem, 2.00vw, 1.50rem)", color: "#ffffff", mt: 0.5 }}>
                             {"Bio: " + officer.bio}
                         </Typography>
 
