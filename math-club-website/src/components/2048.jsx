@@ -271,14 +271,14 @@ export default function Game2048() {
         variant="h3"
         sx={{ fontWeight: "bold", color: "#4b2e83", mb: 1 }}
       >
-        Try 2048
+        Husky 2048
       </Typography>
 
       {/* Score display */}
       <Box
         sx={{
           display: "flex",
-          gap: 2,
+          gap: { xs: 2, sm: 6, md: 10 },
           mb: 2,
           width: "100%",
           justifyContent: "center",
@@ -378,20 +378,39 @@ export default function Game2048() {
         </Typography>
       )}
 
-      {/* New Game button */}
-      <Button
-        variant="contained"
-        onClick={handleNewGame}
-        sx={{
-          mt: 2,
-          bgcolor: "#4b2e83",
-          color: "#ffc700",
-          fontWeight: "bold",
-          "&:hover": { bgcolor: "#32006e" },
-        }}
-      >
-        New Game
-      </Button>
+      <Box sx={{ display: "flex", flexDirection: "row", gap: { xs: 2, sm: 6, md: 10 }}}>
+
+        {/* New Game button */}
+        <Button
+          variant="contained"
+          onClick={handleNewGame}
+          sx={{
+            mt: 2,
+            bgcolor: "#4b2e83",
+            color: "#ffc700",
+            fontWeight: "bold",
+            "&:hover": { bgcolor: "#32006e" },
+          }}
+        >
+          New Game
+        </Button>
+
+        {/* Save Your Score button */}
+        <Button
+          variant="outlined"
+          onClick={() => alert("Score saving not implemented yet!")}
+          sx={{
+            mt: 2,
+            bgcolor: "#4b2e83",
+            color: "#ffc700",
+            fontWeight: "bold",
+            "&:hover": { bgcolor: "#32006e" },
+          }}
+        >
+          Save Score
+        </Button>
+
+      </Box>
     </Box>
   );
 }
