@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import BasicModal from "./modal";
+import Alert from "@mui/material/Alert";
 
 // Tile colors - UW Husky themed
 const TILE_COLORS = {
@@ -162,6 +164,9 @@ export default function Game2048() {
   const [score, setScore] = useState(0);
   const [highestScore, setHighestScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [saveMessage, setSaveMessage] = useState("");
+  const [saveSuccess, setSaveSuccess] = useState(null);
 
   const handleMove = useCallback(
     (direction) => {
@@ -398,7 +403,7 @@ export default function Game2048() {
         {/* Save Your Score button */}
         <Button
           variant="outlined"
-          onClick={() => alert("Score saving not implemented yet!")}
+          onClick={() => setModalOpen(true)}
           sx={{
             mt: 2,
             bgcolor: "#4b2e83",
@@ -411,6 +416,12 @@ export default function Game2048() {
         </Button>
 
       </Box>
+
+      <BasicModal open={modalOpen} close={() => setModalOpen(false)} score={score} onSuccess={(message, success) => { setModalOpen(false);
+                                                                                                                      setSaveMessage(message);
+                                                                                                                      setSaveSuccess(success);
+                                                                                                                    }}/>
+      {saveMessage && <Alert severity={saveSuccess ? "success" : "error"} sx={{ mt: 2 }}>{saveMessage}</Alert>}
     </Box>
   );
 }

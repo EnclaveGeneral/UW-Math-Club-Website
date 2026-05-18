@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import { Grid, Typography } from "@mui/material";
 import * as React from 'react';
+import { useState, useEffect } from "react";
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -43,17 +44,43 @@ function createData(rank, name, score, date) {
   return { rank, name, score, date };
 }
 
-const rows = [
-  createData('1', 'Richard', 10570, '05/17/2026'),
-  createData('2', 'Emily', 10240, '05/17/2026'),
-  createData('3', 'Michael', 9800, '05/17/2026'),
-  createData('4', 'Sarah', 9500, '05/17/2026'),
-  createData('5', 'David', 9200, '05/17/2026'),
-];
 
+
+// Fetch current scoreboard data from AWS API Gateway Endpoint that connects to our DynamoDB through our Lambda Function
+// Popualte it into the rows variable to dynamically update the leaderboard table with current data
+// Sorted by highest score at top with the highest rank, lowest bottom at the back with the lowest rank
 export default function StickyHeadTable() {
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [rows, setRows] = useState([]);
+
+  useEffect(() => {
+    const fetchScoreboard = async () => {
+      try {
+        const response = await fetch("https://fp2ro24shl.execute-api.us-west-2.amazonaws.com/scores");
+        const data = await response.json();
+        const sorted = data
+          .sort((a, b) => b.Score - a.Score)
+          .map((item, index) => {
+            const date = new Date(item.Date);
+            const formattedDate = date.toLocaleString('en-US', {
+              timeZone: 'America/Los_Angeles',
+              month: '2-digit',
+              day: '2-digit',
+              year: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit',
+            });
+            return createData(index + 1, item.Name, item.Score, formattedDate);
+          });
+        setRows(sorted);
+      } catch (error) {
+        console.error("Error fetching current scoreboard data: ", error);
+      }
+    };
+
+    fetchScoreboard();
+  }, []);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -118,7 +145,7 @@ export default function StickyHeadTable() {
           </Table>
         </TableContainer>
         <TablePagination
-          rowsPerPageOptions={[10, 25, 100]}
+          rowsPerPageOptions={[5, 10, 25]}
           component="div"
           count={rows.length}
           rowsPerPage={rowsPerPage}

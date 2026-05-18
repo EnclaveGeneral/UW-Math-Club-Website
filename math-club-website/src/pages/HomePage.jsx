@@ -3,6 +3,7 @@ import SectionOneHalf from "../sections/SectionOneHalf";
 import SectionTwo from "../sections/SectionTwo";
 import SectionThree from "../sections/SectionThree";
 import SectionFour from "../sections/SectionFour";
+import Modal from "../components/modal";
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
             <SectionTwo />
             <SectionThree />
             <SectionFour />
+            <Modal />
         </div>
     )
 }
