@@ -11,7 +11,6 @@ export default function HomePage() {
             <SectionOne />
             <SectionOneHalf />
             <SectionTwo />
-            <SectionThree />
             <SectionFour />
             <Modal />
         </div>
