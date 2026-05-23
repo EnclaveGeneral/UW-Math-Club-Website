@@ -138,7 +138,7 @@ export default function JoinPage() {
                     mb: 1.5,
                     fontFamily: "'Georgia', serif",
                 }}>
-                    University of Washington
+                    University of Washington, Husky Math Club
                 </Typography>
 
                 <Typography sx={{
@@ -154,7 +154,7 @@ export default function JoinPage() {
                     mb: { xs: 2, sm: 3 },
                     textShadow: "none",
                 }}>
-                    Join Husky Math Club
+                    Start Your Journey Today
                 </Typography>
 
                 <Typography sx={{
@@ -168,7 +168,7 @@ export default function JoinPage() {
                     fontFamily: "'Georgia', serif",
                     fontStyle: "italic",
                 }}>
-                    Connect with fellow math lovers, compete in events, and be part of something that adds up.
+                    Where curiosity compounds and every proof brings you closer to your people, us. 
                 </Typography>
             </Box>
 
@@ -189,14 +189,14 @@ export default function JoinPage() {
                         href: "https://www.instagram.com/huskymathclub/",
                         icon: insta_icon,
                         label: "Follow on Instagram",
-                        sub: "@huskymathclub",
+                        sub: "Follow Us On Instagram",
                         delay: "0s",
                     },
                     {
                         href: "https://discord.gg/9XTNNZKreC",
                         icon: discord_icon,
                         label: "Join our Discord",
-                        sub: "discord.gg/9XTNNZKreC",
+                        sub: "Join Us On Discord",
                         delay: "0.9s",
                     },
                 ].map((card) => (
@@ -280,7 +280,7 @@ export default function JoinPage() {
                 fontFamily: "'Georgia', serif",
                 animation: "fadeSlideUp 1.7s ease both",
             }}>
-                Where mathematics meets community · UW Seattle
+                "Sigma notation, Proof by community, Husky spirit, UW Seattle"
             </Typography>
         </Box>
     );
