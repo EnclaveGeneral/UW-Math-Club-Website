@@ -280,7 +280,7 @@ export default function JoinPage() {
                 fontFamily: "'Georgia', serif",
                 animation: "fadeSlideUp 1.7s ease both",
             }}>
-                "Sigma notation, Proof by community, Husky spirit, UW Seattle"
+                "Undefined at average. Continuous at elite. Only At Uw, Husky Math Club"
             </Typography>
         </Box>
     );
