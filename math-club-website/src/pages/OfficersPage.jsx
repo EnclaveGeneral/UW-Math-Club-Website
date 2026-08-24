@@ -15,58 +15,60 @@ import rohan_photo from "../assets/rohan.png";
 // website will reflect all changes, ensure that all picture or media assets are inside the /assets folder in the upper level directory 
 // of this project. 
 const current_officers = [
-    {name: "Richard Zhang", 
-     position: "Lead Software Developer", 
-     major: "HCDE", 
-     bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
-     photo: richard_photo
+    {name: "Darin Ershov",
+     position: "President",
+     major: "",
+     bio: "",
+     photo: 
     }
     ,
-    {name: "Santoshshiva Thirumuruga",
-     position: "President",
-     major: "Computer Science",
-     bio: "Hello. I have been a part of the Husky Math Club since I was a freshman and it has been a huge component of my academic experience. My favorite event would have to be Estimathon that we did Winter 2026.",
-     photo: santosh_photo
+    {name: "Navjot Singh Grewal",
+     position: "Vice President",
+     major: "Applied Mathematics",
+     bio: "I enjoy mathematics, especially analysis, number theory, and dynamical systems, along with reading literature and history. You can contact me at navjot2006grewal@gmail.com",
+     photo: navjot_photo
     }
     ,
     {name: "Yash Solanki",
-     position: "General Officer",
+     position: "Treasurer",
      major: "Computer Science",
      bio: "I really like coding and watching F1",
      photo: yash_photo
     }
     ,
+    {name: "Aiden Hoang",
+     position: "Secretary",
+     major: "",
+     bio: "",
+     photo: 
+    }
+    ,
     {name: "David Jovnozon",
-     position: "General Officer",
+     position: "Collaborator",
      major: "Math and Applied Mathematics",
      bio: "I enjoy algebra, fun projects, and rock climbing. Feel free to reach out at davjavno[at]uw[dot]edu",
      photo: david_photo
-
     }
     ,
     {name: "Wren Feng",
-     position: "General Officer",
+     position: "Social Media Manager",
      major: "Math and Philosophy",
      bio: ":3c",
      photo: wren_photo
-    },
-    {name: "Kosuke Ejiri",
-     position: "General Officer",
-     major: "Applied Mathematics",
-     bio: "Hi! I’m interested in AI, scientific computing, and how math can be used to understand real-world systems. I’m excited to meet more people through Math Club and help make the community more welcoming",
-     photo: kosuke_photo
-    },
-    {name: "Navjot Singh Grewal",
-     position: "General Officer",
-     major: "Applied Mathematics",
-     bio: "I enjoy mathematics, especially analysis, number theory, and dynamical systems, along with reading literature and history. You can contact me at navjot2006grewal@gmail.com",
-     photo: navjot_photo
-    },
+    }
+    ,
     {name: "Christina Kawai",
-     position: "Social Media / Outreach Chair",
+     position: "Social Media Manager",
      major: "Informatics and Applied Mathematics",
      bio: "Hello! I love to eat yummy food, go snowboarding, and sleep for 10 hours!",
      photo: chrisina_photo
+    }
+    ,
+    {name: "Kosuke Ejiri",
+     position: "Website Manager",
+     major: "Applied Mathematics",
+     bio: "Hi! I’m interested in AI, scientific computing, and how math can be used to understand real-world systems. I’m excited to meet more people through Math Club and help make the community more welcoming",
+     photo: kosuke_photo
     }
 ]
 
@@ -75,10 +77,24 @@ const current_officers = [
 // if deemed important, and delete their entry in the current_officers list 
 const past_officers = [
     {name: "Rohan Pandey",
-     position: "Vice President",
+     position: "Vice President 2025-2026",
      major: "Applied Computational Mathematics Sciences",
      bio: "AI enthusiast and loves to play Tennis and Monopoly",
      photo: rohan_photo
+    }
+    ,
+    {name: "Santoshshiva Thirumurugan",
+     position: "President 2025-2026",
+     major: "Computer Science",
+     bio: "Hello. I have been a part of the Husky Math Club since I was a freshman and it has been a huge component of my academic experience. My favorite event would have to be Estimathon that we did Winter 2026.",
+     photo: santosh_photo
+    }
+    ,
+    {name: "Richard Zhang", 
+     position: "Lead Software Developer 2025-2026", 
+     major: "HCDE", 
+     bio: "Stock and Options fan, also 1/8 and 1/18 Diecast Models!", 
+     photo: richard_photo
     }
 ]
 
