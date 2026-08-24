@@ -138,7 +138,7 @@ export default function JoinPage() {
                     mb: 1.5,
                     fontFamily: "'Georgia', serif",
                 }}>
-                    University of Washington, Husky Math Club
+                    Husky Math Club @ University of Washington
                 </Typography>
 
                 <Typography sx={{
@@ -168,7 +168,7 @@ export default function JoinPage() {
                     fontFamily: "'Georgia', serif",
                     fontStyle: "italic",
                 }}>
-                    Where curiosity compounds and every proof brings you closer to your people, us. 
+                    Where math and community intersect. 
                 </Typography>
             </Box>
 
@@ -280,7 +280,7 @@ export default function JoinPage() {
                 fontFamily: "'Georgia', serif",
                 animation: "fadeSlideUp 1.7s ease both",
             }}>
-                "Undefined at average. Continuous at elite. Only At Uw, Husky Math Club"
+                "Thank you for joining."
             </Typography>
         </Box>
     );
